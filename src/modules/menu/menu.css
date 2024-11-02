@@ -1,0 +1,66 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: url('../../fonts/Agrandir/Agrandir-Regular.otf') format('opentype');}
+
+@font-face {
+    font-family: 'Agrandir-WideLight';
+    src: url('../../fonts/Agrandir/Agrandir-WideLight.otf') format('opentype');}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    background-color: #0336b8;
+    color: white;
+    text-align: center;
+    font-family: 'Agrandir-Regular';
+}
+
+.menuContainer {
+    display: flex;
+    color: black;
+    margin: 110px 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 300px;
+}
+
+.menuPhoto {
+    width: 75vw;
+}
+
+.menuAboutContainer {
+    color: white;
+    background-color: black;
+    height: 300px;
+    padding: 20px;
+    font-size: clamp(0.4rem, 0.8vw + 0.5rem, 1.5rem);
+}
+
+.menuAboutContainer h1 {
+    font-family: 'Agrandir-WideLight';
+}

@@ -1,0 +1,101 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: url('./fonts/Agrandir/Agrandir-Regular.otf') format('opentype');}
+
+    @font-face {
+    font-family: 'Agrandir-WideLight';
+    src: url('./fonts/Agrandir/Agrandir-WideLight.otf') format('opentype');}
+
+nav {
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 15px;
+}
+
+header {
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+nav button {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Agrandir-WideLight';
+}
+
+nav button:hover {
+    cursor: pointer;
+    color: #0336b8;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    background-color: #0336b8;
+    color: white;
+    text-align: center;
+    font-family: 'Agrandir-Regular';
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+    height: 20vh;
+}
+
+.restaurantName {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.aboutMe {
+    font-size: clamp(0.5rem, 1.2vw + 0.8rem, 1.4rem);
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Agrandir-WideLight';
+    padding: 20px;
+}
